@@ -8,7 +8,7 @@ const Home = () => {
           <li className="mr-4">
             <a
               className="block py-2 px-6 border border-blue-400 text-blue-400 rounded text-2xl transition hover:bg-blue-400 hover:text-slate-800"
-              href="#"
+              href="Resume.pdf"
             >
               Resume
             </a>
@@ -16,7 +16,9 @@ const Home = () => {
           <li>
             <a
               className="block py-2 px-6 border border-blue-400 text-blue-400 rounded text-2xl transition hover:bg-blue-400 hover:text-slate-800"
-              href="#"
+              href="https://github.com/yap8"
+              target="_blank"
+              rel="noreferrer"
             >
               GitHub
             </a>
