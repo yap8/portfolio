@@ -42,7 +42,7 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <div className="container py-20 flex flex-col justify-center items-center">
+      <div className="h-screen container py-20 flex flex-col justify-center items-center">
         <h1 className="text-4xl text-blue-400 mb-10">Contact</h1>
         <form
           className="max-w-2xl w-full flex flex-col"

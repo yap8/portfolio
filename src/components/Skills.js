@@ -1,7 +1,7 @@
 const Skills = () => {
   return (
     <section id="skills">
-      <div className="container py-20 flex flex-col justify-center items-center">
+      <div className="h-screen container py-20 flex flex-col justify-center items-center">
         <h1 className="text-4xl text-blue-400 mb-10">Skills</h1>
         <ul className="flex justify-center w-full">
           <li className="flex-1 py-8 px-6 mr-8 bg-slate-900 rounded-lg">

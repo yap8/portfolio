@@ -25,7 +25,7 @@ const projects = [
 const Projects = () => {
   return (
     <section id="projects">
-      <div className="container py-20 flex flex-col justify-center items-center">
+      <div className="h-screen container py-20 flex flex-col justify-center items-center">
         <h1 className="text-4xl text-blue-400 mb-10">Projects</h1>
         <ul className="flex justify-center w-full">
           {projects.map((project, index) => (
