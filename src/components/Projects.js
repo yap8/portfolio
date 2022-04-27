@@ -1,3 +1,6 @@
+import { AiOutlineGithub } from 'react-icons/ai';
+import { FaGlobe } from 'react-icons/fa';
+
 const projects = [
   {
     image: 'jetro.jpg',
@@ -42,21 +45,23 @@ const Projects = () => {
               <ul className="flex mt-auto">
                 <li className="mr-4">
                   <a
-                    className="block py-2 px-6 border border-blue-400 text-blue-400 rounded text-2xl transition hover:bg-blue-400 hover:text-slate-800"
+                    className="flex items-center py-2 px-6 border border-blue-400 text-blue-400 rounded text-2xl transition hover:bg-blue-400 hover:text-slate-800"
                     href={project.repo}
                     target="_blank"
                     rel="noreferrer"
                   >
+                    <AiOutlineGithub className="text-2xl mr-2" />
                     Repo
                   </a>
                 </li>
                 <li>
                   <a
-                    className="block py-2 px-6 border border-blue-400 text-blue-400 rounded text-2xl transition hover:bg-blue-400 hover:text-slate-800"
+                    className="flex items-center py-2 px-6 border border-blue-400 text-blue-400 rounded text-2xl transition hover:bg-blue-400 hover:text-slate-800"
                     href={project.demo}
                     target="_blank"
                     rel="noreferrer"
                   >
+                    <FaGlobe className="text-xl mr-2" />
                     Demo
                   </a>
                 </li>
