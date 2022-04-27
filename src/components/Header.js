@@ -6,8 +6,8 @@ import { BiBook } from 'react-icons/bi';
 const Header = () => {
   return (
     <header className="fixed bottom-8 w-full">
-      <nav className="m-auto w-fit py-4 px-8 bg-slate-600 bg-opacity-60 backdrop-blur-sm rounded-full">
-        <ul className="flex justify-center">
+      <nav className="m-auto w-fit py-4 px-8 bg-slate-600 bg-opacity-60 backdrop-blur-sm rounded-full shadow">
+        <ul className="flex justify-center text-2xl">
           <li className="mr-4">
             <Link
               className="transition"
