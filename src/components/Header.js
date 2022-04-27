@@ -1,5 +1,6 @@
 import { AiOutlineHome, AiOutlineMessage } from 'react-icons/ai';
 import { MdWorkOutline } from 'react-icons/md';
+import { Link } from 'react-scroll/modules';
 import { BiBook } from 'react-icons/bi';
 
 const Header = () => {
@@ -8,24 +9,52 @@ const Header = () => {
       <nav className="m-auto w-fit py-4 px-8 bg-slate-600 bg-opacity-60 backdrop-blur-sm rounded-full">
         <ul className="flex justify-center">
           <li className="mr-4">
-            <a href="#skills">
+            <Link
+              className="transition"
+              activeClass="text-blue-400"
+              to="home"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
               <AiOutlineHome />
-            </a>
+            </Link>
           </li>
           <li className="mr-4">
-            <a href="#projects">
+            <Link
+              className="transition"
+              activeClass="text-blue-400"
+              to="skills"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
               <BiBook />
-            </a>
+            </Link>
           </li>
           <li className="mr-4">
-            <a href="#skills">
+            <Link
+              className="transition"
+              activeClass="text-blue-400"
+              to="projects"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
               <MdWorkOutline />
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="#contact">
+            <Link
+              className="transition"
+              activeClass="text-blue-400"
+              to="contact"
+              spy={true}
+              smooth={true}
+              duration={500}
+            >
               <AiOutlineMessage />
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>

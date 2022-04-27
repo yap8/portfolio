@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <section>
+    <section id="home">
       <div className="h-screen flex flex-col justify-center items-center">
         <h1 className="text-5xl mb-4">Arseny Nebozhenko</h1>
         <p className="text-xl text-gray-300 mb-6">Frontend Developer</p>
