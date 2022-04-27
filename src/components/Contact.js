@@ -1,5 +1,6 @@
-import { useState } from 'react';
 import emailjs from '@emailjs/browser';
+import { toast } from 'react-toastify';
+import { useState } from 'react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -13,6 +14,9 @@ const Contact = () => {
 
     const { name, email, message } = formData;
 
+    if (!name.trim() || !email.trim() || !message.trim())
+      return toast.error('Please enter all the fields');
+
     emailjs
       .send(
         'service_3ht654v',
@@ -24,10 +28,9 @@ const Contact = () => {
         },
         'rFFwKVjtJdz5jBaIC'
       )
-      .then(() => alert('success'))
-      .catch((error) => console.log(error));
-
-    setFormData({ name: '', email: '', message: '' });
+      .then(() => toast.success('Email successfully sent!'))
+      .then(() => setFormData({ name: '', email: '', message: '' }))
+      .catch(() => toast.error('Some error occured :('));
   };
 
   const handleChange = (e) => {
@@ -64,6 +67,7 @@ const Contact = () => {
           <textarea
             className="h-56 mb-2 text-blue-400 text-2xl py-2 px-6 rounded resize-none bg-transparent border border-blue-400 placeholder:text-blue-400 focus:text-white"
             name="message"
+            placeholder="Message"
             value={formData.message}
             onChange={handleChange}
           />
