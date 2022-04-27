@@ -2,10 +2,9 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 import Projects from './components/Projects';
-import Skills from './components/Skills';
-import Footer from './components/Footer';
-import Home from './components/Home';
 import Contact from './components/Contact';
+import Skills from './components/Skills';
+import Home from './components/Home';
 
 const App = () => {
   return (
@@ -15,7 +14,6 @@ const App = () => {
       <Skills />
       <Projects />
       <Contact />
-      <Footer />
     </div>
   );
 };
