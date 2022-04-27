@@ -25,7 +25,7 @@ const Skills = () => {
         <h1 className="text-4xl text-blue-400 mb-10">Skills</h1>
         <ul className="flex justify-center w-full">
           {skills.map((skill) => (
-            <li className="flex-1 py-8 px-6 mr-8 bg-slate-900 rounded-lg">
+            <li className="flex-1 py-8 px-6 mr-8 bg-slate-900 rounded-lg last:mr-0">
               <h2 className="text-3xl text-center text-blue-400 mb-2">
                 {skill.title}
               </h2>
