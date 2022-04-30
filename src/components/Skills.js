@@ -12,6 +12,7 @@ const skills = [
       'TypeScript',
       'React',
       'Redux',
+      'Styled Components',
       'Tailwind CSS',
       'Material UI',
       'Bootstrap',
