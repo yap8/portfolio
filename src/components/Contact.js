@@ -6,6 +6,8 @@ import Button from './Button';
 import Form, { FormField } from './Form';
 
 const Contact = () => {
+  const [disabled, setDisabled] = useState(false);
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -20,6 +22,8 @@ const Contact = () => {
     if (!name.trim() || !email.trim() || !message.trim())
       return toast.error('Please enter all the fields');
 
+    setDisabled(true);
+
     emailjs
       .send(
         'service_3ht654v',
@@ -33,7 +37,8 @@ const Contact = () => {
       )
       .then(() => toast.success('Email successfully sent!'))
       .then(() => setFormData({ name: '', email: '', message: '' }))
-      .catch(() => toast.error('Some error occured :('));
+      .catch(() => toast.error('Some error occured :('))
+      .finally(() => setDisabled(false));
   };
 
   const handleChange = (e) => {
@@ -52,6 +57,7 @@ const Contact = () => {
             type="text"
             name="name"
             placeholder="Name"
+            disabled={disabled}
             value={formData.name}
             onChange={handleChange}
           />
@@ -59,6 +65,7 @@ const Contact = () => {
             type="email"
             name="email"
             placeholder="Email"
+            disabled={disabled}
             value={formData.email}
             onChange={handleChange}
           />
@@ -67,10 +74,13 @@ const Contact = () => {
             tag="textarea"
             name="message"
             placeholder="Message"
+            disabled={disabled}
             value={formData.message}
             onChange={handleChange}
           />
-          <Button className="w-full lg:w-auto mr-auto">Send</Button>
+          <Button className="w-full lg:w-auto mr-auto" disabled={disabled}>
+            Send
+          </Button>
         </Form>
       </div>
     </section>
