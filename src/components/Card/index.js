@@ -6,7 +6,7 @@ const Card = ({ tag: Tag = 'div', className = '', children }) => {
   return (
     <Tag
       className={
-        'flex flex-col justify-between flex-1 py-8 px-6 bg-white rounded-lg shadow ' +
+        'flex flex-col justify-between py-8 px-6 bg-white rounded-lg shadow ' +
         className
       }
     >
