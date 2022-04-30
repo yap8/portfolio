@@ -12,7 +12,7 @@ const links = [
 
 const Header = () => {
   return (
-    <header className="fixed inset-x-0 m-auto w-fit bottom-8">
+    <header className="fixed inset-x-0 m-auto w-fit bottom-8 z-50">
       <nav className="py-4 px-8 bg-slate-600 bg-opacity-80 backdrop-blur-sm rounded-full shadow">
         <ul className="flex justify-center text-2xl text-white">
           {links.map(({ to, Icon }) => (
