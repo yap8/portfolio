@@ -70,7 +70,7 @@ const Contact = () => {
             value={formData.message}
             onChange={handleChange}
           />
-          <Button className="mr-auto">Send</Button>
+          <Button className="w-full lg:w-auto mr-auto">Send</Button>
         </Form>
       </div>
     </section>
