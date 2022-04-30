@@ -20,7 +20,9 @@ const Home = () => {
   return (
     <section className="bg-slate-800" id="home">
       <div className="min-h-screen container flex flex-col justify-center items-center">
-        <h1 className="text-5xl mb-4 text-white">Arseny Nebozhenko</h1>
+        <h1 className="text-5xl mb-4 text-white text-center">
+          Arseny Nebozhenko
+        </h1>
         <p className="text-xl text-gray-300 mb-6">Frontend Developer</p>
         <ul className="flex">
           {links.map(({ text, href, Icon }) => (
