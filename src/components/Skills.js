@@ -33,13 +33,16 @@ const Skills = () => {
         <ul className="flex justify-center w-full flex-wrap">
           {skills.map((skill) => (
             <Card
-              tag="li"
               className="w-full lg:flex-1 mb-8 lg:mr-8 lg:mb-0 last:m-0"
+              tag="li"
+              key={skill.title}
             >
               <CardTitle>{skill.title}</CardTitle>
               <ul className="flex flex-wrap text-xl list-disc pl-4 lg:pl-12 lg:pr-4 mb-auto">
                 {skill.items.map((item) => (
-                  <li className="w-1/2 p-1 lg:p-2">{item}</li>
+                  <li className="w-1/2 p-1 lg:p-2" key={item}>
+                    {item}
+                  </li>
                 ))}
               </ul>
             </Card>

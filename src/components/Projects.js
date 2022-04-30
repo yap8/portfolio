@@ -37,6 +37,7 @@ const Projects = () => {
             <Card
               className="w-full mb-8 last:mb-0 lg:max-w-md 2xl:m-0"
               tag="li"
+              key={project.title}
             >
               <CardImage src={project.image} alt={project.title} />
               <CardTitle>{project.title}</CardTitle>

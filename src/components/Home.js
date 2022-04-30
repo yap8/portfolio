@@ -31,7 +31,7 @@ const Home = () => {
         <p className="text-xl text-gray-300 mb-6">Frontend Developer</p>
         <ul className="flex-col flex lg:flex-row">
           {links.map(({ text, href, Icon }) => (
-            <li className="w-full mb-2 lg:mb-0 lg:mr-4 lg:last:mr-0">
+            <li className="w-full mb-2 lg:mb-0 lg:mr-4 lg:last:mr-0" key={text}>
               <Button tag="a" href={href} target="_blank" rel="noreferrer">
                 {Icon}
                 {text}
