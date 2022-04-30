@@ -45,7 +45,7 @@ const Contact = () => {
 
   return (
     <section className="bg-slate-800" id="contact">
-      <div className="h-screen container py-20 flex flex-col justify-center items-center">
+      <div className="min-h-screen container py-20 flex flex-col justify-center items-center">
         <h1 className="text-4xl text-blue-400 mb-10">Contact</h1>
         <Form onSubmit={handleSubmit}>
           <FormField
