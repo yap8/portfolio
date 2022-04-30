@@ -4,8 +4,8 @@ import { ImProfile } from 'react-icons/im';
 const Home = () => {
   return (
     <section id="home">
-      <div className="h-screen flex flex-col justify-center items-center">
-        <h1 className="text-5xl mb-4">Arseny Nebozhenko</h1>
+      <div className="h-screen flex flex-col justify-center items-center bg-slate-800">
+        <h1 className="text-5xl mb-4 text-white">Arseny Nebozhenko</h1>
         <p className="text-xl text-gray-300 mb-6">Frontend Developer</p>
         <ul className="flex">
           <li className="mr-4">
