@@ -1,7 +1,15 @@
-const Button = ({ tag: Tag = 'button', children, ...props }) => {
+const Button = ({
+  tag: Tag = 'button',
+  className = '',
+  children,
+  ...props
+}) => {
   return (
     <Tag
-      className="flex items-center py-2 px-6 border border-blue-400 text-blue-400 rounded text-2xl transition hover:bg-blue-400 hover:text-slate-800"
+      className={
+        'flex items-center py-2 px-6 border border-blue-400 text-blue-400 rounded text-2xl transition hover:bg-blue-400 hover:text-slate-800 ' +
+        className
+      }
       {...props}
     >
       {children}

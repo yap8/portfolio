@@ -1,5 +1,6 @@
 import { AiOutlineGithub } from 'react-icons/ai';
 import { FaGlobe } from 'react-icons/fa';
+import Button from './Button';
 import Card, { CardDescription, CardImage, CardTitle } from './Card';
 
 const projects = [
@@ -39,26 +40,28 @@ const Projects = () => {
               <CardDescription>{project.desc}</CardDescription>
               <ul className="flex justify-center mt-auto">
                 <li className="mr-4">
-                  <a
-                    className="flex items-center py-2 px-6 border border-blue-400 text-blue-400 rounded text-2xl transition hover:bg-blue-400 hover:text-slate-800"
+                  <Button
+                    className="hover:text-white"
+                    tag="a"
                     href={project.repo}
                     target="_blank"
                     rel="noreferrer"
                   >
                     <AiOutlineGithub className="text-2xl mr-2" />
                     Repo
-                  </a>
+                  </Button>
                 </li>
                 <li>
-                  <a
-                    className="flex items-center py-2 px-6 border border-blue-400 text-blue-400 rounded text-2xl transition hover:bg-blue-400 hover:text-slate-800"
+                  <Button
+                    className="hover:text-white"
+                    tag="a"
                     href={project.demo}
                     target="_blank"
                     rel="noreferrer"
                   >
                     <FaGlobe className="text-xl mr-2" />
                     Demo
-                  </a>
+                  </Button>
                 </li>
               </ul>
             </Card>
