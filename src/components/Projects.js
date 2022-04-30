@@ -34,7 +34,7 @@ const Projects = () => {
         <h1 className="text-4xl text-blue-400 mb-10">Projects</h1>
         <ul className="flex justify-center w-full flex-wrap">
           {projects.map((project) => (
-            <Card tag="li">
+            <Card className="mb-8 last:mb-0 lg:max-w-xl xl:mb-0" tag="li">
               <CardImage src={project.image} alt={project.title} />
               <CardTitle>{project.title}</CardTitle>
               <CardDescription>{project.desc}</CardDescription>
