@@ -12,6 +12,8 @@ const Home = () => {
             <a
               className="flex items-center py-2 px-6 border border-blue-400 text-blue-400 rounded text-2xl transition hover:bg-blue-400 hover:text-slate-800"
               href="Resume.pdf"
+              target="_blank"
+              rel="noreferrer"
             >
               <ImProfile className="text-xl mr-2" />
               Resume
