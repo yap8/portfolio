@@ -32,7 +32,7 @@ const Projects = () => {
     <section className="bg-slate-100" id="projects">
       <div className="min-h-screen container py-20 flex flex-col justify-center items-center">
         <h1 className="text-4xl text-blue-400 mb-10">Projects</h1>
-        <ul className="flex justify-center w-full">
+        <ul className="flex justify-center w-full flex-wrap">
           {projects.map((project) => (
             <Card tag="li">
               <CardImage src={project.image} alt={project.title} />
