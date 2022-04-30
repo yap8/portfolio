@@ -1,4 +1,4 @@
-import { AiOutlineGithub } from 'react-icons/ai';
+import { AiOutlineGithub, AiFillLinkedin } from 'react-icons/ai';
 import { ImProfile } from 'react-icons/im';
 
 import Button from './Button';
@@ -13,6 +13,11 @@ const links = [
     text: 'GitHub',
     href: 'https://github.com/yap8',
     Icon: <AiOutlineGithub className="text-2xl mr-2" />,
+  },
+  {
+    text: 'LinkedIn',
+    href: 'https://www.linkedin.com/in/arseny-nebozhenko-693b16223/',
+    Icon: <AiFillLinkedin className="text-2xl mr-2" />,
   },
 ];
 
