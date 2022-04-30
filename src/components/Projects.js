@@ -1,5 +1,6 @@
 import { AiOutlineGithub } from 'react-icons/ai';
 import { FaGlobe } from 'react-icons/fa';
+import Card, { CardDescription, CardImage, CardTitle } from './Card';
 
 const projects = [
   {
@@ -31,18 +32,12 @@ const Projects = () => {
       <div className="h-screen container py-20 flex flex-col justify-center items-center">
         <h1 className="text-4xl text-blue-400 mb-10">Projects</h1>
         <ul className="flex justify-center w-full">
-          {projects.map((project, index) => (
-            <li className="flex flex-col justify-between flex-1 py-8 px-6 mr-8 bg-slate-900 rounded-lg last:mr-0">
-              <div className="h-80 overflow-hidden rounded-lg mb-4">
-                <img
-                  style={{ minHeight: '100%', minWidth: '100%' }}
-                  src={project.image}
-                  alt={project.title}
-                />
-              </div>
-              <h2 className="text-3xl text-blue-400 mb-2">{project.title}</h2>
-              <p className="text-xl mb-5">{project.desc}</p>
-              <ul className="flex mt-auto">
+          {projects.map((project) => (
+            <Card tag="li">
+              <CardImage src={project.image} alt={project.title} />
+              <CardTitle>{project.title}</CardTitle>
+              <CardDescription>{project.desc}</CardDescription>
+              <ul className="flex justify-center mt-auto">
                 <li className="mr-4">
                   <a
                     className="flex items-center py-2 px-6 border border-blue-400 text-blue-400 rounded text-2xl transition hover:bg-blue-400 hover:text-slate-800"
@@ -66,7 +61,7 @@ const Projects = () => {
                   </a>
                 </li>
               </ul>
-            </li>
+            </Card>
           ))}
         </ul>
       </div>
