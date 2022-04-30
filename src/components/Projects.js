@@ -6,14 +6,14 @@ import Card, { CardDescription, CardImage, CardTitle } from './Card';
 
 const projects = [
   {
-    image: 'jetro.jpg',
+    image: 'jetro.png',
     title: 'Jetro',
     desc: 'Website built with React and styled components',
     repo: 'https://github.com/yap8/react-jetro',
     demo: 'https://yap8.github.io/react-jetro',
   },
   {
-    image: 'flashcards.jpg',
+    image: 'flashcards.png',
     title: 'FlashCards',
     desc: 'Fullstack app built with React and Express',
     repo: 'https://github.com/yap8/flashcards',
