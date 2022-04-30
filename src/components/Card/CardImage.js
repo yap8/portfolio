@@ -1,8 +1,8 @@
 const CardImage = ({ src, alt }) => {
   return (
-    <div className="h-80 overflow-hidden rounded-lg mb-4">
+    <div className="h-80 overflow-hidden rounded-lg mb-4 border relative">
       <img
-        style={{ minHeight: '100%', minWidth: '100%' }}
+        className="h-full w-full object-contain absolute"
         src={src}
         alt={alt}
       />
