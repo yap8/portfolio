@@ -6,13 +6,6 @@ import Card, { CardDescription, CardImage, CardTitle } from './Card';
 
 const projects = [
   {
-    image: 'jetro.png',
-    title: 'Jetro',
-    desc: 'Website built with React and styled components',
-    repo: 'https://github.com/yap8/react-jetro',
-    demo: 'https://yap8.github.io/react-jetro',
-  },
-  {
     image: 'flashcards.png',
     title: 'FlashCards',
     desc: 'Fullstack app built with React and Express',
@@ -22,9 +15,16 @@ const projects = [
   {
     image: 'messenger.png',
     title: 'Messenger',
-    desc: 'Fullstack messenger app built with React & PHP',
+    desc: 'Fullstack messenger app built with React and PHP',
     repo: 'https://github.com/yap8/messenger',
     demo: 'http://h91115tq.beget.tech/',
+  },
+  {
+    image: 'jetro.png',
+    title: 'Jetro',
+    desc: 'Website built with React and styled components',
+    repo: 'https://github.com/yap8/react-jetro',
+    demo: 'https://yap8.github.io/react-jetro',
   },
 ];
 
