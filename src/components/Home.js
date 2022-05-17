@@ -6,7 +6,7 @@ import Button from './Button';
 const links = [
   {
     text: 'Resume',
-    href: 'Resume.pdf',
+    href: 'Nebozhenko_Frontend_Resume.pdf',
     Icon: <ImProfile className="text-xl mr-2" />,
   },
   {
